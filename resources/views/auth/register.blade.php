@@ -43,6 +43,10 @@
                   <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Isi emailmu disini">
                 </div>
                 <div class="mb-3">
+                  <label for="nomor_hp" class="form-label text-success">No. Handphone</label>
+                  <input type="text" class="form-control" id="no_hp" name="no_hp" aria-describedby="emailHelp" placeholder="Isi Nomor Handphonemu disini">
+                </div>
+                <div class="mb-3">
                   <label for="password" class="form-label text-success">Password</label>
                   <input type="password" class="form-control" id="password" name="password" placeholder="Isi passwordmu disini">
                 </div>
@@ -50,7 +54,7 @@
                   <label for="password_confirmation" class="form-label text-success">Konfirmasi Password</label>
                   <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Konfirmasi Password">
                 </div>
-                <button type="submit" class="btn btn-none border border-success rounded-3 align-self-center text-success fw-bold" style="width: 70%;">Daftar</button>
+                <button type="submit" class="btn btn-none border border-success rounded-5 align-self-center text-success fw-bold" style="width: 70%;">Daftar</button>
               </form>
             <p class="align-self-center">Sudah punya akun? <a href="{{route('get_login')}}" class="fw-bold">Masuk</a></p>
         </div>

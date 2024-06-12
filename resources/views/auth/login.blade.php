@@ -42,7 +42,7 @@
                   <label for="password" class="form-label text-success">Password</label>
                   <input type="password" class="form-control text-success" id="password" name="password" placeholder="Isi password disini">
                 </div>
-                <button type="submit" class="btn btn-none border border-success rounded-3 align-self-center text-success fw-bold" style="width: 70%;">Masuk</button>
+                <button type="submit" class="btn btn-none border border-success rounded-5 align-self-center text-success fw-bold" style="width: 70%;">Masuk</button>
             </form>
             <p class="align-self-center">Belum punya akun? <a href="{{route('get_register')}}" class="fw-bold">Daftar</a></p>
         </div>
