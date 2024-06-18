@@ -18,4 +18,7 @@ class HomeController extends Controller
     public function Register(){
         return view('auth.register');
     }
+    public function Dashboard(){
+        return view('dashboard.index');
+    }
 }
