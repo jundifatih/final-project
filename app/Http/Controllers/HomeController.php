@@ -12,16 +12,4 @@ class HomeController extends Controller
     public function Test(){
         return view('test.index');
     }
-    public function Login(){
-        return view('auth.login');
-    }
-    public function Register(){
-        return view('auth.register');
-    }
-    public function Dashboard(){
-        return view('dashboard.user');
-    }
-    public function DashboardAdmin(){
-        return view('dashboard.admin');
-    }
 }
