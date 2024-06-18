@@ -30,19 +30,40 @@
             <!-- Modal -->
             <div class="modal fade" id="input_data" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
-                    <div class="modal-content">
+                    <div class="modal-content bg-success">
                         <div class="modal-header">
-                        <h1 class="modal-title fs-5 text-success" id="exampleModalLabel">Input Data Sampah</h1>
+                        <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Input Data Sampah</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <form action="" method="GET">
+                        <form action="" method="">
                             <div class="modal-body">
-                                <label for="email" class="form-label text-success">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Isi emailmu disini">
+                                <label for="user_id" class="form-label text-light">User ID</label>
+                                <input type="number" class="form-control" id="user_id" name="user_id" placeholder="Isi User ID disini" required>
+                                
+                                <label for="jenis_sampah" class="form-label text-light mt-3">Jenis Sampah</label>
+                                <select class="form-select form-control"aria-label="Default select example" name="jenis_sampah" required>
+                                    <option selected>Pilih Jenis Sampah Barang</option>
+                                    <option value="kaca">Kaca</option>
+                                    <option value="plastik">Plastik</option>
+                                    <option value="kertas">Kertas</option>
+                                    <option value="kaleng">Kaleng</option>
+                                    <option value="elektronik">Elektronik</option>
+                                    <option value="tesktil">Tesktil</option>
+                                    {{-- <option value="Bekas" {{ old('kondisi') === 'Bekas' ? 'selected' : '' }}>Bekas</option>
+                                    <option value="Baru" {{ old('kondisi') === 'Baru' ? 'selected' : '' }}>Baru</option> --}}
+                                </select>
+
+                                <label for="nama_sampah" class="form-label text-light mt-3">Nama Sampah</label>
+                                <input type="text" class="form-control" id="nama_sampah" name="nama_sampah" placeholder="Isi Nama Sampah disini" required>
+                                <label for="berat" class="form-label text-light mt-3">Berat</label>
+                                <input type="number" class="form-control" id="berat" name="berat" placeholder="Isi Berat Sampah disini" required>
+                                <label for="harga" class="form-label text-light mt-3">Harga</label>
+                                <input type="number" class="form-control" id="harga" name="harga" placeholder="Isi Harga Sampah disini" required>
+                                
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-success">Save changes</button>
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+                                <button type="submit" class="btn btn-light">Tambah Data</button>
                             </div>
                         </form>
                     </div>
