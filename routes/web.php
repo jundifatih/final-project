@@ -18,3 +18,4 @@ Route::get('/test', [HomeController::class, 'Test'])->name('get_test');
 Route::get('/login', [HomeController::class, 'login'])->name('get_login');
 Route::get('/register', [HomeController::class, 'Register'])->name('get_register');
 Route::get('/dashboard', [HomeController::class, 'Dashboard'])->name('get_dashboard');
+Route::get('/dashboard_admin', [HomeController::class, 'DashboardAdmin'])->name('get_dashboardAdmin');

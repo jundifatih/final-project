@@ -37,6 +37,22 @@
               <li class="nav-item">
                 <a class="nav-link" href="{{route('get_beranda')}}#hubungi-kami">Hubungi</a>
               </li>
+              {{-- @auth
+                @if (Auth::user()->roles[0]->name == 'superadmin')
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="{{ route('get_products') }}">Manage Products</a>
+                    </li>
+                @endif
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle bg-primary rounded-1 fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle"></i> {{ Auth::user()->name }}
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{{route('get_profile')}}">Profile</a></li>
+                        <li><a class="dropdown-item" href="{{route('logout')}}">Logout</a></li>
+                    </ul>
+                </li>
+              @else --}}
             </ul>
             <div class="d-flex gap-3 my-3">
               <a href="{{route('get_login')}}">
